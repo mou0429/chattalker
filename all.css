@@ -1,0 +1,506 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    z-index: 0;
+    color: #221E1F;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+  
+a,p{
+	text-decoration: none;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* index.css*/
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+@media(max-width:576px){
+    .wrap{
+        max-width: 540px;
+    }
+
+}
+
+@media(max-width:576px){
+    .container{
+        max-width: 540px;
+    }
+
+}
+
+.gotop{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 55px;
+    right: 100px;
+    z-index: 1;
+
+}
+
+.gotop img{
+    max-width: 100%;
+    height: auto;
+}
+  
+
+
+.background{
+    position: absolute;
+    max-width: 60%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+@media(max-width:576px){
+    .background{
+        display: none;
+    }
+
+}
+
+.bannerpic-sm{
+    display: none;
+
+}
+
+@media(max-width:576px){
+    .bannerpic-sm{
+     position: absolute;
+     right: 0;
+     height: auto;
+     width: 100%;
+     z-index: -1;
+     bottom: 0;
+     display: block;
+    }
+
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+
+}
+
+@media(max-width:576px){
+    .navbar{
+     height: 72px;
+     max-width: 540px;
+     border-bottom: 2px solid #F6CB52;
+    }
+
+}
+
+
+
+.headerlogo{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true);
+    display: block;
+    width: 218px;
+    height: 40px;
+    text-indent: 101%;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+
+@media(max-width:576px){
+    .headerlogo{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true);
+    display: block;
+    height: auto;
+    max-width: 100%;
+    text-indent: 101%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+
+  }
+
+}
+
+
+
+
+.navbtn a{
+    color: #ffff;
+    text-align: center;
+    display: block;
+    background: #FF5D50;
+    width: 128px;
+    height: 40px;  
+    border-radius: 50px 50px;
+    padding-top: 7px;
+}
+
+.navbtn a:hover{
+    color: #FF5D50;
+    background: #ffff;
+    border: 1px solid #FF5D50;
+
+}
+
+
+@media(max-width: 576px){
+    .navbtn a{
+   font-size: 14px;
+}
+
+
+}
+
+
+
+
+.bannerpic{
+    width: 40%;
+}
+
+.subtitle,h5{
+    color: #56C4C5;
+}
+
+.bg-ball01{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+    width: 180px;
+    height: 360px;
+    top: 501px;
+    left: -42px;
+    position: absolute;
+    background-position: right;
+    z-index: -1;
+}
+
+.platform{
+    margin-top: 150px;
+
+}
+.platform img{
+    width: 90px;
+    height: 90px;
+}
+
+.character{
+    margin-top: 150px;
+}
+
+.carditem{
+    
+    border: none;
+    border-radius: 12px;
+   
+}
+
+.ball02{
+    position: relative;
+}
+
+.bg-ball02{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -100px;
+    right: -180px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.iconitem{
+ margin-top: 150px;
+ margin-left: 14px;
+}
+
+.icon{
+    width: 86px;
+    height: 86px;
+    background: #fff;
+    border-radius: 150px;
+    box-shadow: 0px 2px 10px #00000014;
+    background-size: cover;
+    text-align: center;
+}
+
+.icon img{
+   margin-top: 15px;
+}
+
+.icon .cardicon{
+    margin-top: 22px;
+}
+
+.icontext{
+    margin-top: 300px;
+    margin-left: 55px;
+}
+
+.btn-green{
+    background: #56C4C5;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 27px;
+    white-space: nowrap;
+    border: 1px solid #56C4C5;
+    line-height: 49px;
+    padding: 0px 32px;
+    display: inline-block;
+}
+
+.btn-green:hover{
+    color: #56C4C5;
+    background: #ffff;
+    
+    border: 1px solid #56C4C5;
+   
+   
+}
+
+.review{
+    margin-top: 150px;
+}
+
+.user{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: -70px;
+    z-index: 1;
+    position: absolute;
+}
+
+.review-card{
+    background: #ffff;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 40px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.ball03{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+.review hr{
+    border: 0.5px solid gray;
+}
+
+
+
+
+.footer{
+    margin-top: 150px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    padding-top: 260px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+
+/* product.css*/
+
+.bg-gray {
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 470px;
+    z-index: -2;
+}
+
+
+
+.banner-bg{
+    max-width: 950px;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: -1;
+   
+}
+
+.banner-sm {
+    display: none;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f001…/chatTalker_images/banner_sm.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: 495px;
+    z-index: -1;
+}
+
+
+
+.banner-title{
+    padding-top: 100px;
+}
+
+.program{
+    padding-top: 450px;
+}
+
+.btn-group{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 70px;
+}
+
+.program-btn{
+    color: #56C4C5;
+    background: #ffff;
+    font-size: 18px;
+    border-radius: 27px;
+    white-space: nowrap;
+    border: 1px solid #56C4C5;
+    line-height: 49px;
+    padding: 0px 32px;
+    display: inline-block;
+   
+}
+
+.program-btn:hover{
+    background: #56C4C5;
+    color: #ffff;
+}
+
+.user-total, .user-bill{
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px 35px;
+    margin-top: 25px;
+    
+    
+}
+
+.user-total, .user-bill p{
+    font-size: 12px;
+}
+
+.user-total .number{
+    color: #56C4C5;
+}
+
+.user-total .number h5{
+    padding-top: 3px;
+}
+
+.serve{
+    padding: 20px;
+}
+
+.card-btn{
+    text-align: center;
+}
+
+.question{
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+}
+
+.ball04{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 900px;
+    left: -250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -2;
+}
