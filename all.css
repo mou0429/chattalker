@@ -78,7 +78,7 @@ img {
 
 .wrap{
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1440px;
 
 }
 
@@ -110,6 +110,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+@media(max-width:576px){
+    .gotop{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        bottom: 55px;
+        right: 30px;
+        z-index: 1;
+    
+    }
+    
+}
   
 
 
@@ -121,10 +134,25 @@ img {
     z-index: -1;
 }
 
+.bg-sm{
+    display: none;
+}
+
 @media(max-width:576px){
     .background{
         display: none;
     }
+
+    .bg-sm{
+        display: block;
+        position: absolute;
+        z-index: -2;
+        bottom: 0;
+        background-size: contain;
+        margin-top: 80px;
+    }
+
+
 
 }
 
@@ -133,18 +161,8 @@ img {
 
 }
 
-@media(max-width:576px){
-    .bannerpic-sm{
-     position: absolute;
-     right: 0;
-     height: auto;
-     width: 100%;
-     z-index: -1;
-     bottom: 0;
-     display: block;
-    }
 
-}
+
 
 .navbar{
    display: flex;
@@ -155,13 +173,10 @@ img {
 
 @media(max-width:576px){
     .navbar{
-     height: 72px;
-     max-width: 540px;
-     border-bottom: 2px solid #F6CB52;
-    }
-
+        border-bottom: 2px solid #FFD153;
+     
+     }
 }
-
 
 
 .headerlogo{
@@ -228,6 +243,16 @@ img {
     width: 40%;
 }
 
+@media(max-width:576px){
+    .bannerpic{
+        width: 70%;
+        margin-left: 50px;
+        margin-top: 50px;
+        z-index: -1;
+
+    }
+}
+
 .subtitle,h5{
     color: #56C4C5;
 }
@@ -241,6 +266,20 @@ img {
     position: absolute;
     background-position: right;
     z-index: -1;
+}
+
+@media(max-width:576px){
+    .bg-ball01{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+        width: 100px;
+        height: 100px;
+        top: 501px;
+        left: -60px;
+        position: absolute;
+        background-position: center;
+        background-size: contain;
+        z-index: -1;
+    }
 }
 
 .platform{
@@ -269,15 +308,29 @@ img {
 
 .bg-ball02{
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: absolute;
-    top: -100px;
-    right: -180px;
+    top: -190px;
+    right: -60px;
   
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+
+@media(max-width:576px){
+    .bg-ball02{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: -90px;
+        right: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
 }
 
 .iconitem{
@@ -400,6 +453,31 @@ img {
     z-index: -2;
 }
 
+.bg-gray-sm{
+   display: none;
+}
+
+@media(max-width:576px){
+    .bg-gray {
+        display: none;
+    }
+
+    .bg-gray-sm{
+        display: block;
+        background-color: #F7F9FD;
+        border-radius: 0px 0px 0px 400px;
+        position: absolute;
+        bottom: 14px;
+        right: 0;
+        width: 100%;
+        height: 470px;
+        z-index: -2;
+        
+    }
+
+
+}
+
 
 
 .banner-bg{
@@ -412,18 +490,26 @@ img {
    
 }
 
-.banner-sm {
-    display: none;
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f001…/chatTalker_images/banner_sm.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 72px;
-    left: 0;
-    width: 100%;
-    height: 495px;
-    z-index: -1;
+@media(max-width:576px){
+    .banner-bg{
+       display: none;
+    }
+
 }
 
+.banner-sm{
+    display: none;
+}
+
+@media(max-width:576px){
+    .banner-sm{
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: -2;
+    }
+
+}
 
 
 .banner-title{
